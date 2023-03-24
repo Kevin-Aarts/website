@@ -1,0 +1,181 @@
+.background{
+    background: url(/img/hero-bg.png) center no-repeat;
+    background-size: cover;
+    height: 620px;
+}
+/* div{
+    border: 1px solid black;
+} */
+.but{
+    width: 150px;
+}
+.icon{
+    width: 60px;
+}
+.background-blue{
+    background-color: rgb(44, 64, 155);
+}
+.background-cards{
+    background-color: rgb(37, 55, 128);
+}
+.button-radius{
+ border-radius: 50px ;
+ width: 80px;
+}
+.background-color{
+    background-color: rgb(226, 239, 243);
+}
+.border-radius-none{
+    border-radius: 0px;
+}
+.background-lightblue{
+    background-color: rgb(55, 83, 207);
+}
+
+/* ik probeer hier ff wat uit */
+
+ 
+.fade-in-image-top {
+    animation: fadeInAnimationTop ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+.fade-in-image-bottem {
+    animation: fadeInAnimationBottem ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.fade-in-image-Right {
+    animation: fadeInAnimationSideRight ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimationTop {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 30%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+    0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+ 
+
+
+@keyframes fadeInAnimationBottem {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -27%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInAnimationSide {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 27%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes fadeInAnimationSideM {
+	from {
+		opacity: 0;
+		transform: translate3d(-27%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+
+@keyframes fadeInAnimationSideRight {
+	from {
+		opacity: 0;
+		transform: translate3d(27%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes fadeInAnimationSideLeft {
+	from {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+    animation: fadeInAnimationSideRight ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.reveal-Left{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .active-Left{
+      animation: fadeInAnimationSideLeft ease 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  
+  .reveal-Right{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .active-Right{
+	animation: fadeInAnimationSide ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+.reveal-M{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .active-M{
+	animation: fadeInAnimationSideM ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
